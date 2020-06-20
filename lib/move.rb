@@ -8,6 +8,10 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(inp)
-  inp = (inp.to_i) - 1
-  return inp
+  index = (inp.to_i) - 1
+  return index
 end
+
+def move(board, index, value = "X")
+  board[index] = value
+  return board
